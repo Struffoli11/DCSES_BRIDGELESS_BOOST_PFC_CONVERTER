@@ -1,5 +1,5 @@
 Plecs {
-  Name          "model_7_3"
+  Name          "model_6_3_Phasors"
   Version       "4.9"
   CircuitModel  "ContStateSpace"
   StartTime     "0.0"
@@ -29,26 +29,26 @@ Plecs {
   AssertionAction "1"
   FixedPointDatatypeOverride "1"
   InitializationCommands base64 "JSBHcmlkClZpbiA9IDExMCpzcXJ0KDIpOyAlIEdyaWQgd"
-"m9sdGFnZSAoVikKRiA9IDUwLjA7ICUgR3JpZCBmcmVxdWVuY3kgKEh6KQp3PSAyKnBpKkYKJSBQbG"
-"FudApDID0gNTAwZS02OyAlIE91dHB1dCBjYXBhY2l0b3IgKEMpCkwgPSAxZS0zOyAgICUgQ2hva2U"
-"gaW5kdWN0YW5jZSAoSCkKUmwgPSAwLjAyOyAlIENob2tlIHJlc2lzdGFuY2UgKG9obXMpClJvID0g"
-"MTI1OyAlTG9hZCBSZXNpc3RhbmNlIChvaG1zKQoKZnMgPSAxMDBlMzsgJSBTd2l0Y2hpbmcgZnJlc"
-"XVlbmN5IChIeikKCiUgQ3VycmVudCBDb21wZW5zYXRvcgpSaS5GID0gNTBlMzsgICAgICAgJSBDdX"
-"JyZW50IGNvbnRyb2wgbG9vcCBmcmVxdWVuY3kgKEh6KQpSaS5UcyA9IDEvUmkuRjsgICAgJSBTYW1"
-"wbGUgdGltZQpSaS5UcCA9IFJpLlRzLzIuMDsgJSBBdmVyYWdlIFBXTSBkZWxheSAocykKClJpLlRp"
-"ID0gMi9SbCpSaS5UcDsgClJpLlRuID0gTC9SbDsKClJpLktwID0gUmkuVG4vUmkuVGk7ClJpLktpI"
-"D0gMS9SaS5UaTsKCiUgVm9sdGFnZSBDb21wZW5zYXRvcgpSdi5GID0gMmUzOyAgICAgICAgICUgVm"
-"9sdGFnZSBjb250cm9sIGxvb3AgZnJlcXVlbmN5IChIeikKUnYuVHMgPSAxL1J2LkY7IAkgICUgU2F"
-"tcGxlIHRpbWUKUnYuVHAgPSBSdi5Ucy8yKjEwOyAlIEVxdWl2YWxlbnQgZGVsYXkKClJ2LlRpID0g"
-"OC9DKlJ2LlRwKlJ2LlRwOwpSdi5UbiA9IDQqUnYuVHA7CgpSdi5LcCA9IFJ2LlRuL1J2LlRpOwpSd"
-"i5LaSA9IDEvUnYuVGk7CgolcGFyYW1ldHJpIGFydGljb2xvCkdtX2N2ID0gMC4wMjYxOyAlT3V0ZX"
-"ItLWxvb3AgZGMgZ2Fpbgpmel9jdiA9IDY2Ljc4OyAlWmVyby1GcmVxdWVuY3kgKEh6KQp3el9jdiA"
-"9IGZ6X2N2ICogKDIgKiBwaSk7ICVuYXR1cmFsIGZyZXF1ZW5jeSAKS2MgPSAtMC4wMDIgJWNvbnRy"
-"b2xsZXIgaW5uZXIgbG9vcCBnYWluCkZzd2MgPSAxMDBlMyAlc3dpdGNoIGZyZXF1ZW5jeQoKJXBhc"
-"mFtZXRyaSBzaXN0ZW1hIGEgY2ljbG8gY2hpdXNvCgolUEkgaW5uZXIgY3VycmVudCBjb250cm9sIG"
-"xvb3AgCmZjID0gRnN3Yy8xMDsgJWlubmVyIGxvb3AgZnJlcXVlbmN5CndjID0gMipwaSpmYzsKJUt"
-"waSDigIs9IDIqcGkqRipMOwolS2lpIOKAiz0gdypSbDsKCiVQSSBvdXRlciB2b2x0YWdlIGxvb3AK"
-"S3B2ID0gMC4xOwpLaXYgPSA1Ow=="
+"m9sdGFnZSAoVikKRiA9IDUwLjA7ICUgR3JpZCBmcmVxdWVuY3kgKEh6KQp3PSAyKnBpKkY7CiUgUG"
+"xhbnQKQyA9IDUwMGUtNjsgJSBPdXRwdXQgY2FwYWNpdG9yIChDKQpMID0gMWUtMzsgICAlIENob2t"
+"lIGluZHVjdGFuY2UgKEgpClJsID0gMC4wMjsgJSBDaG9rZSByZXNpc3RhbmNlIChvaG1zKQpSbyA9"
+"IDEyNTsgJUxvYWQgUmVzaXN0YW5jZSAob2htcykKCmZzID0gMTAwZTM7ICUgU3dpdGNoaW5nIGZyZ"
+"XF1ZW5jeSAoSHopCgolIEN1cnJlbnQgQ29tcGVuc2F0b3IKUmkuRiA9IDUwZTM7ICAgICAgICUgQ3"
+"VycmVudCBjb250cm9sIGxvb3AgZnJlcXVlbmN5IChIeikKUmkuVHMgPSAxL1JpLkY7ICAgICUgU2F"
+"tcGxlIHRpbWUKUmkuVHAgPSBSaS5Ucy8yLjA7ICUgQXZlcmFnZSBQV00gZGVsYXkgKHMpCgpSaS5U"
+"aSA9IDIvUmwqUmkuVHA7IApSaS5UbiA9IEwvUmw7CgpSaS5LcCA9IFJpLlRuL1JpLlRpOwpSaS5La"
+"SA9IDEvUmkuVGk7CgolIFZvbHRhZ2UgQ29tcGVuc2F0b3IKUnYuRiA9IDJlMzsgICAgICAgICAlIF"
+"ZvbHRhZ2UgY29udHJvbCBsb29wIGZyZXF1ZW5jeSAoSHopClJ2LlRzID0gMS9Sdi5GOyAJICAlIFN"
+"hbXBsZSB0aW1lClJ2LlRwID0gUnYuVHMvMioxMDsgJSBFcXVpdmFsZW50IGRlbGF5CgpSdi5UaSA9"
+"IDgvQypSdi5UcCpSdi5UcDsKUnYuVG4gPSA0KlJ2LlRwOwoKUnYuS3AgPSBSdi5Ubi9Sdi5UaTsKU"
+"nYuS2kgPSAxL1J2LlRpOwoKJXBhcmFtZXRyaSBhcnRpY29sbwpHbV9jdiA9IDAuMDI2MTsgJU91dG"
+"VyLS1sb29wIGRjIGdhaW4KZnpfY3YgPSA2Ni43ODsgJVplcm8tRnJlcXVlbmN5IChIeikKd3pfY3Y"
+"gPSBmel9jdiAqICgyICogcGkpOyAlbmF0dXJhbCBmcmVxdWVuY3kgCktjID0gLTAuMDAyOyAlY29u"
+"dHJvbGxlciBpbm5lciBsb29wIGdhaW4KRnN3YyA9IDEwMGUzOyVzd2l0Y2ggZnJlcXVlbmN5CgolU"
+"EkgaW5uZXIgY3VycmVudCBjb250cm9sIGxvb3AgLSBkaXJlY3QKJUtwaWEg4oCLPSAwLjA2MjsKJU"
+"tpaWEg4oCLPSAxMjU7CgolUEkgaW5uZXIgY3VycmVudCBjb250cm9sIGxvb3AgLSBxdWFkcmF0dXJ"
+"lCiVLcGliIOKAiz0gNjIuODsKJUtpaWIg4oCLPSAxMjU2Ljg7CgolUEkgb3V0ZXIgdm9sdGFnZSBs"
+"b29wCiVLcHYgPSAwLjAyOwolS2l2ID0gMC4zMjs="
   InitialState  "1"
   SystemState   ""
   TaskingMode   "1"
@@ -79,7 +79,7 @@ Plecs {
   ScriptsDialogGeometry "[1074 565 446 244]"
   ScriptsDialogSplitterPos "100"
   Schematic {
-    Location      [1024, 382; 2560, 1132]
+    Location      [0, 93; 1536, 843]
     ZoomFactor    1.28751
     SliderPosition [135, 0]
     ShowBrowser   off
@@ -191,11 +191,6 @@ Plecs {
       }
       Terminal {
         Type          Input
-        Position      [80, 25]
-        Direction     right
-      }
-      Terminal {
-        Type          Input
         Position      [80, -20]
         Direction     right
       }
@@ -205,7 +200,7 @@ Plecs {
         Direction     left
       }
       Schematic {
-        Location      [0, 27; 1536, 777]
+        Location      [0, 31; 1606, 1183]
         ZoomFactor    1.75427
         SliderPosition [159, 158]
         ShowBrowser   off
@@ -670,25 +665,6 @@ Plecs {
         }
         Component {
           Type          Input
-          Name          "Io"
-          Show          on
-          Position      [110, 315]
-          Direction     right
-          Flipped       off
-          LabelPosition south
-          Parameter {
-            Variable      "Index"
-            Value         "4"
-            Show          on
-          }
-          Parameter {
-            Variable      "Width"
-            Value         "-1"
-            Show          off
-          }
-        }
-        Component {
-          Type          Input
           Name          "Vo"
           Show          on
           Position      [110, 430]
@@ -697,7 +673,7 @@ Plecs {
           LabelPosition south
           Parameter {
             Variable      "Index"
-            Value         "5"
+            Value         "4"
             Show          on
           }
           Parameter {
@@ -746,22 +722,8 @@ Plecs {
           Frame         [-35, -10; 35, 10]
           Parameter {
             Variable      "f(u)"
-            Value         " (1/2)*(Vin/Rl)*(  1 - ( sqrt( 1 - 8*(Rl) * ( (u[1]"
-"*u[2]) / (Vin)^2 ) ) )  )"
-            Show          off
-          }
-        }
-        Component {
-          Type          SignalMux
-          Name          "Mux"
-          Show          off
-          Position      [170, 310]
-          Direction     right
-          Flipped       off
-          LabelPosition south
-          Parameter {
-            Variable      "Width"
-            Value         "2"
+            Value         " (1/2)*(Vin/Rl)*(  1 - ( sqrt( 1 - 8*(Rl/Ro) * ( (u"
+"[1]*u[1]) / (Vin)^2 ) ) )  )"
             Show          off
           }
         }
@@ -775,7 +737,7 @@ Plecs {
           LabelPosition south
           Parameter {
             Variable      "Index"
-            Value         "6"
+            Value         "5"
             Show          on
           }
           Parameter {
@@ -841,7 +803,7 @@ Plecs {
           }
           Parameter {
             Variable      "ki"
-            Value         "0.1256"
+            Value         "0.125"
             Show          off
           }
           Parameter {
@@ -1609,7 +1571,7 @@ Plecs {
           }
           Parameter {
             Variable      "kp"
-            Value         "62"
+            Value         "62.8"
             Show          off
           }
           Parameter {
@@ -1839,7 +1801,7 @@ Plecs {
             Direction     up
           }
           Schematic {
-            Location      [0, 23; 1536, 773]
+            Location      [0, 27; 1536, 777]
             ZoomFactor    2.62217
             SliderPosition [3655, 1232]
             ShowBrowser   off
@@ -2528,7 +2490,7 @@ Plecs {
             Direction     left
           }
           Schematic {
-            Location      [211, 455; 893, 843]
+            Location      [211, 620; 893, 843]
             ZoomFactor    1.06729
             SliderPosition [12, 0]
             ShowBrowser   off
@@ -4694,13 +4656,6 @@ Plecs {
         }
         Connection {
           Type          Signal
-          SrcComponent  "Mux"
-          SrcTerminal   1
-          DstComponent  "x_alpha_ff"
-          DstTerminal   1
-        }
-        Connection {
-          Type          Signal
           SrcComponent  "x_beta_ref"
           SrcTerminal   1
           DstComponent  "Sum3"
@@ -4760,12 +4715,12 @@ Plecs {
           Branch {
             Points        [140, 340]
             Branch {
-              Points        [140, 305]
-              DstComponent  "Mux"
-              DstTerminal   2
+              DstComponent  "Goto2"
+              DstTerminal   1
             }
             Branch {
-              DstComponent  "Goto2"
+              Points        [140, 310]
+              DstComponent  "x_alpha_ff"
               DstTerminal   1
             }
           }
@@ -4790,13 +4745,6 @@ Plecs {
           SrcTerminal   1
           DstComponent  "Decoupler"
           DstTerminal   5
-        }
-        Connection {
-          Type          Signal
-          SrcComponent  "Io"
-          SrcTerminal   1
-          DstComponent  "Mux"
-          DstTerminal   3
         }
         Connection {
           Type          Signal
@@ -5231,11 +5179,11 @@ Plecs {
       Direction     up
       Flipped       off
       LabelPosition south
-      Location      [0, 27; 1536, 826]
+      Location      [0, 27; 1536, 835]
       State         "AAAA/wAAAAD9AAAAAgAAAAEAAAB4AAABlPwCAAAAA/sAAAAUAFMAYQB2A"
 "GUAZABWAGkAZQB3AHMAAAAAHAAAAZQAAABoAP////sAAAAQAFoAbwBvAG0AQQByAGUAYQAAAAAA//"
 "///wAAADYA////+wAAAAwAVAByAGEAYwBlAHMAAAAA2wAAANUAAABoAP///wAAAAMAAAYAAAAAiPw"
-"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAABgAAAABSAP///wAABgAAAAJ4AAAA"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAABgAAAABSAP///wAABgAAAAKBAAAA"
 "BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
 "AAAAA=="
       SavedViews    "AAAAAgAAAAEAAAAYAFMAdABlAGEAZAB5ACAAcwB0AGEAdABlP8SBKprzW"
@@ -5247,7 +5195,7 @@ Plecs {
       TimeRange     "0"
       ScrollingMode "1"
       SingleTimeAxis "1"
-      Open          "1"
+      Open          "0"
       Ts            "-1"
       SampleLimit   "0"
       XAxisLabel    "Time [s]"
@@ -5464,11 +5412,11 @@ Plecs {
       Direction     up
       Flipped       off
       LabelPosition south
-      Location      [0, 23; 2560, 1371]
-      State         "AAAA/wAAAAD9AAAAAgAAAAEAAAB4AAAEw/wCAAAAA/sAAAAUAFMAYQB2A"
+      Location      [0, 27; 2560, 1384]
+      State         "AAAA/wAAAAD9AAAAAgAAAAEAAAB4AAAEzPwCAAAAA/sAAAAUAFMAYQB2A"
 "GUAZABWAGkAZQB3AHMAAAAAHAAAAZQAAABoAP////sAAAAQAFoAbwBvAG0AQQByAGUAYQAAAAAA//"
-"///wAAADYA////+wAAAAwAVAByAGEAYwBlAHMBAAAAMAAABMMAAABoAP///wAAAAMAAAoAAAAAYvw"
-"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAACgAAAABSAP///wAACYQAAATDAAAA"
+"///wAAADYA////+wAAAAwAVAByAGEAYwBlAHMBAAAAMAAABMwAAABoAP///wAAAAMAAAoAAAAAYvw"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAACgAAAABSAP///wAACYQAAATMAAAA"
 "BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
 "AAAAA=="
       SavedViews    "AAAAAgAAAAEAAAAYAFMAdABlAGEAZAB5ACAAcwB0AGEAdABlP8SBKprzW"
@@ -5509,7 +5457,8 @@ Plecs {
           AutoScale     1
           MinValue      0
           MaxValue      1
-          Signals       {"Reference Output Voltage", "Output Voltage "}
+          Signals       {"Reference Output Voltage", "Output Voltage ", "+2% o"
+"f Vo*", "-2% of Vo*"}
           Untangle      0
           KeepBaseline  off
           BaselineValue 0
@@ -6028,9 +5977,7 @@ Plecs {
         DstTerminal   1
       }
       Branch {
-        Points        [1295, 130; 1295, 505]
-        DstComponent  "Controller"
-        DstTerminal   4
+        Points        [1295, 130; 1295, 505; 610, 505]
       }
     }
     Connection {
@@ -6049,7 +5996,7 @@ Plecs {
       Branch {
         Points        [285, 495]
         DstComponent  "Controller"
-        DstTerminal   6
+        DstTerminal   5
       }
       Branch {
         DstComponent  "Gain"
@@ -6069,7 +6016,7 @@ Plecs {
       Branch {
         Points        [715, 460]
         DstComponent  "Controller"
-        DstTerminal   5
+        DstTerminal   4
       }
     }
     Connection {
