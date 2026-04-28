@@ -79,9 +79,9 @@ Plecs {
   ScriptsDialogGeometry "[1074 565 446 244]"
   ScriptsDialogSplitterPos "100"
   Schematic {
-    Location      [0, 93; 1536, 843]
+    Location      [0, 27; 2560, 1353]
     ZoomFactor    1.28751
-    SliderPosition [135, 0]
+    SliderPosition [61, 0]
     ShowBrowser   off
     BrowserWidth  143
     Component {
@@ -3502,11 +3502,11 @@ Plecs {
           Direction     up
           Flipped       off
           LabelPosition south
-          Location      [0, 27; 1539, 868]
+          Location      [0, 27; 1539, 877]
           State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAb"
 "wBvAG0AQQByAGUAYQAAAAAA/////wAAADYA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAA"
 "AA/////wAAAGgA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABoAP///wAAAAMAAAAAAAA"
-"AAPwBAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABSAP///wAABgMAAAMu"
+"AAPwBAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABSAP///wAABgMAAAM3"
 "AAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AA"
 "AAAAAAAAA=="
           SavedViews    "AAAAAgAAAAA="
@@ -3776,12 +3776,12 @@ Plecs {
           }
           Parameter {
             Variable      "kp"
-            Value         "0.1"
+            Value         "0.02"
             Show          off
           }
           Parameter {
             Variable      "ki"
-            Value         "10"
+            Value         "0.32"
             Show          off
           }
           Parameter {
@@ -5217,11 +5217,11 @@ Plecs {
       Direction     up
       Flipped       off
       LabelPosition south
-      Location      [0, 27; 2560, 1411]
+      Location      [0, 27; 2560, 1427]
       State         "AAAA/wAAAAD9AAAAAgAAAAEAAAB4AAABlPwCAAAAA/sAAAAUAFMAYQB2A"
 "GUAZABWAGkAZQB3AHMAAAAAHAAAAZQAAABoAP////sAAAAQAFoAbwBvAG0AQQByAGUAYQAAAAAA//"
 "///wAAADYA////+wAAAAwAVAByAGEAYwBlAHMAAAAA2wAAANUAAABoAP///wAAAAMAAAoAAAAAiPw"
-"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAACgAAAABSAP///wAACgAAAATBAAAA"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAACgAAAABSAP///wAACgAAAATRAAAA"
 "BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
 "AAAAA=="
       SavedViews    "AAAAAgAAAAEAAAAYAFMAdABlAGEAZAB5ACAAcwB0AGEAdABlP8SBKprzW"
@@ -5450,11 +5450,11 @@ Plecs {
       Direction     up
       Flipped       off
       LabelPosition south
-      Location      [0, 27; 2560, 1411]
-      State         "AAAA/wAAAAD9AAAAAgAAAAEAAAB4AAAEm/wCAAAAA/sAAAAUAFMAYQB2A"
+      Location      [0, 27; 2560, 1427]
+      State         "AAAA/wAAAAD9AAAAAgAAAAEAAAB4AAAEq/wCAAAAA/sAAAAUAFMAYQB2A"
 "GUAZABWAGkAZQB3AHMAAAAAHAAAAZQAAABoAP////sAAAAQAFoAbwBvAG0AQQByAGUAYQAAAAAA//"
-"///wAAADYA////+wAAAAwAVAByAGEAYwBlAHMBAAAAMAAABJsAAABoAP///wAAAAMAAAoAAAAArvw"
-"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAACgAAAABSAP///wAACYQAAASbAAAA"
+"///wAAADYA////+wAAAAwAVAByAGEAYwBlAHMBAAAAMAAABKsAAABoAP///wAAAAMAAAoAAAAArvw"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAACgAAAABSAP///wAACYQAAASrAAAA"
 "BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
 "AAAAA=="
       SavedViews    "AAAAAgAAAAEAAAAYAFMAdABlAGEAZAB5ACAAcwB0AGEAdABlP8SBKprzW"

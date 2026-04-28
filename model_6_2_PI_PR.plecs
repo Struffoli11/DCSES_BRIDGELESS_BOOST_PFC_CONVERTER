@@ -91,7 +91,7 @@ Plecs {
       }
       Parameter {
         Variable      "phi"
-        Value         "0"
+        Value         "pi"
         Show          off
       }
     }
@@ -284,23 +284,23 @@ Plecs {
       Direction     up
       Flipped       off
       LabelPosition south
-      Location      [0, 27; 1280, 766]
+      Location      [0, 27; 1280, 775]
       State         "AAAA/wAAAAD9AAAAAgAAAAEAAAB4AAABlPwCAAAAA/sAAAAUAFMAYQB2A"
 "GUAZABWAGkAZQB3AHMAAAAAHAAAAZQAAABoAP////sAAAAQAFoAbwBvAG0AQQByAGUAYQAAAAAA//"
 "///wAAADYA////+wAAAAwAVAByAGEAYwBlAHMAAAAA2wAAANUAAABoAP///wAAAAMAAAUAAAAAiPw"
-"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAABQAAAABSAP///wAABQAAAAI8AAAA"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAABQAAAABSAP///wAABQAAAAJFAAAA"
 "BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
 "AAAAA=="
       SavedViews    "AAAAAgAAAAEAAAAYAFMAdABlAGEAZAB5ACAAcwB0AGEAdABlP8SBKprzW"
 "n4/yZmZmZmZmgAAAAEAf/gAAAAAAAB/+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="
-      HeaderState   "{\"DefaultSecSize\":0,\"FirstSecSize\":234,\"Labels\":[\""
-"Delta\",\"THD\"],\"VisualIdxs\":[3,10]}"
+      HeaderState   "{\"DefaultSecSize\":100,\"FirstSecSize\":234,\"Labels\":["
+"\"Delta\",\"THD\"],\"VisualIdxs\":[3,10]}"
       PlotPalettes  "AAAAAQAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
       Axes          "1"
       TimeRange     "0"
       ScrollingMode "1"
       SingleTimeAxis "1"
-      Open          "0"
+      Open          "1"
       Ts            "-1"
       SampleLimit   "0"
       XAxisLabel    "Time [s]"
@@ -552,10 +552,10 @@ Plecs {
       Flipped       off
       LabelPosition south
       Location      [0, 31; 2559, 1431]
-      State         "AAAA/wAAAAD9AAAAAgAAAAEAAAB4AAAEq/wCAAAAA/sAAAAUAFMAYQB2A"
+      State         "AAAA/wAAAAD9AAAAAgAAAAEAAAB4AAAE9/wCAAAAA/sAAAAUAFMAYQB2A"
 "GUAZABWAGkAZQB3AHMAAAAAHAAAAZQAAABoAP////sAAAAQAFoAbwBvAG0AQQByAGUAYQAAAAAA//"
-"///wAAADYA////+wAAAAwAVAByAGEAYwBlAHMBAAAAMAAABKsAAABoAP///wAAAAMAAAn/AAAArvw"
-"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAACf8AAABSAP///wAACYMAAASrAAAA"
+"///wAAADYA////+wAAAAwAVAByAGEAYwBlAHMBAAAAMAAABPcAAABoAP///wAAAAMAAAn/AAAAYvw"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAACf8AAABSAP///wAACYMAAAT3AAAA"
 "BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
 "AAAAA=="
       SavedViews    "AAAAAgAAAAEAAAAYAFMAdABlAGEAZAB5ACAAcwB0AGEAdABlP8SBKprzW"
@@ -567,7 +567,7 @@ Plecs {
       TimeRange     "0.3"
       ScrollingMode "1"
       SingleTimeAxis "1"
-      Open          "1"
+      Open          "0"
       Ts            "-1"
       SampleLimit   "0"
       XAxisLabel    "Time [s]"
@@ -650,11 +650,11 @@ Plecs {
       Direction     up
       Flipped       off
       LabelPosition south
-      Location      [0, 27; 1283, 724]
-      State         "AAAA/wAAAAD9AAAAAgAAAAEAAAB4AAACOPwCAAAAA/sAAAAUAFMAYQB2A"
+      Location      [0, 27; 1283, 733]
+      State         "AAAA/wAAAAD9AAAAAgAAAAEAAAB4AAACQfwCAAAAA/sAAAAUAFMAYQB2A"
 "GUAZABWAGkAZQB3AHMAAAAAHAAAAZQAAABoAP////sAAAAQAFoAbwBvAG0AQQByAGUAYQAAAAAA//"
-"///wAAADYA////+wAAAAwAVAByAGEAYwBlAHMBAAAAMAAAAjgAAABoAP///wAAAAMAAAUDAAAAYvw"
-"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAABQMAAABSAP///wAABIcAAAI4AAAA"
+"///wAAADYA////+wAAAAwAVAByAGEAYwBlAHMBAAAAMAAAAkEAAABoAP///wAAAAMAAAUDAAAAYvw"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAABQMAAABSAP///wAABIcAAAJBAAAA"
 "BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
 "AAAAA=="
       SavedViews    "AAAAAgAAAAEAAAAYAFMAdABlAGEAZAB5ACAAcwB0AGEAdABlP8SBKprzW"
@@ -776,7 +776,7 @@ Plecs {
         Direction     up
       }
       Schematic {
-        Location      [1024, 382; 2560, 1132]
+        Location      [594, 396; 2130, 1146]
         ZoomFactor    1.73168
         SliderPosition [0, 0]
         ShowBrowser   off
@@ -1509,7 +1509,7 @@ Plecs {
             Variable      "kp"
             Prompt        "Proportional gain"
             Type          FreeText
-            Value         "25"
+            Value         "Ri.Kp"
             Show          off
             Tunable       off
             TabName       ""
@@ -1518,7 +1518,7 @@ Plecs {
             Variable      "ki"
             Prompt        "Integral gain"
             Type          FreeText
-            Value         "1000"
+            Value         "Ri.Ki"
             Show          off
             Tunable       off
             TabName       ""
@@ -2188,16 +2188,16 @@ Plecs {
           Direction     up
           Flipped       off
           LabelPosition south
-          Location      [70, 370; 2630, 1736]
+          Location      [0, 74; 2560, 1449]
           State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAb"
 "wBvAG0AQQByAGUAYQAAAAAA/////wAAADYA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAA"
 "AA/////wAAAGgA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABoAP///wAAAAMAAAoAAAA"
-"AiPwBAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAACgAAAABSAP///wAACgAAAASv"
+"AiPwBAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAACgAAAABSAP///wAACgAAAAS4"
 "AAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AA"
 "AAAAAAAAA=="
           SavedViews    "AAAAAgAAAAA="
-          HeaderState   "{\"DefaultSecSize\":100,\"FirstSecSize\":115,\"Labels"
-"\":[],\"VisualIdxs\":[]}"
+          HeaderState   "{\"DefaultSecSize\":0,\"FirstSecSize\":115,\"Labels\""
+":[],\"VisualIdxs\":[]}"
           PlotPalettes  "AAAAAQAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
           Axes          "1"
           TimeRange     "0"
@@ -3217,7 +3217,7 @@ Plecs {
       Frame         [-15, -10; 15, 10]
       Parameter {
         Variable      "Value"
-        Value         "Rv.Kp"
+        Value         "Rv.Ki"
         Show          off
       }
       Parameter {

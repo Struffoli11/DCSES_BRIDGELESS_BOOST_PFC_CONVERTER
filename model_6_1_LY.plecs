@@ -40,8 +40,8 @@ Plecs {
 "lent delay\n\nRv.Ti = 8/C*Rv.Tp*Rv.Tp;\nRv.Tn = 4*Rv.Tp;\n\nRv.Kp = Rv.Tn/Rv."
 "Ti;\nRv.Ki = 1/Rv.Ti;\n\n%parametri articolo\nGm_cv =  0.026; %Outer--loop dc"
 " gain\nfz_cv = 66.78; %Zero-Frequency (Hz)\nwz_cv = fz_cv * (2 * pi); %natura"
-"l frequency \nKc = 0.002%controller inner loop gain\nFswc = 100e3 %switch fre"
-"quency"
+"l frequency \nKc = 0.2%controller inner loop gain\nFswc = 100e3 %switch frequ"
+"ency"
   InitialState  "1"
   SystemState   ""
   TaskingMode   "1"
@@ -67,8 +67,8 @@ Plecs {
   ScriptsDialogSplitterPos "100"
   Schematic {
     Location      [0, 27; 2560, 1353]
-    ZoomFactor    0.959449
-    SliderPosition [0, 0]
+    ZoomFactor    2.39141
+    SliderPosition [137, 169]
     ShowBrowser   off
     BrowserWidth  100
     Component {
@@ -233,7 +233,7 @@ Plecs {
       Type          Constant
       Name          "V4"
       Show          off
-      Position      [680, 540]
+      Position      [685, 525]
       Direction     right
       Flipped       on
       LabelPosition south
@@ -2100,7 +2100,7 @@ Plecs {
               LabelPosition south
               Parameter {
                 Variable      "Width"
-                Value         "8"
+                Value         "9"
                 Show          off
               }
             }
@@ -2287,8 +2287,8 @@ Plecs {
               Frame         [-30, -10; 30, 10]
               Parameter {
                 Variable      "f(u)"
-                Value         "-Rl*u[3] - (u[2]/Ro) + u[8]*u[5]*(  u[4]*u[6] -"
-"u[1]*u[7])"
+                Value         "-Rl*u[3] - (u[2]/u[9]) + u[8]*u[5]*(  u[4]*u[6]"
+" -u[1]*u[7])"
                 Show          off
               }
             }
@@ -2300,12 +2300,12 @@ Plecs {
               Direction     up
               Flipped       off
               LabelPosition south
-              Location      [0, 26; 1283, 714]
+              Location      [0, 27; 1283, 724]
               State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQA"
 "FoAbwBvAG0AQQByAGUAYQAAAAAA/////wAAADYA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcw"
 "AAAAAA/////wAAAGgA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABoAP///wAAAAMAAAU"
-"DAAAAYvwBAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAABQMAAABQAP///wAABQMA"
-"AAIvAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP///"
+"DAAAAYvwBAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAABQMAAABSAP///wAABQMA"
+"AAI4AAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP///"
 "/8AAAAAAAAAAA=="
               SavedViews    "AAAAAgAAAAA="
               HeaderState   "{\"DefaultSecSize\":0,\"FirstSecSize\":279,\"Labe"
@@ -2315,7 +2315,7 @@ Plecs {
               TimeRange     "0.0"
               ScrollingMode "1"
               SingleTimeAxis "1"
-              Open          "0"
+              Open          "1"
               Ts            "-1"
               SampleLimit   "0"
               XAxisLabel    "Time / s"
@@ -2419,11 +2419,35 @@ Plecs {
                 Show          off
               }
             }
+            Component {
+              Type          From
+              Name          "From11"
+              Show          off
+              Position      [180, 305]
+              Direction     right
+              Flipped       off
+              LabelPosition south
+              Parameter {
+                Variable      "Tag"
+                Value         "Ro"
+                Show          off
+              }
+              Parameter {
+                Variable      "Visibility"
+                Value         "1"
+                Show          off
+              }
+              Parameter {
+                Variable      "NoMatchingCounterpartAction"
+                Value         "1"
+                Show          off
+              }
+            }
             Connection {
               Type          Signal
               SrcComponent  "e2^2"
               SrcTerminal   1
-              Points        [230, 115; 230, 155]
+              Points        [230, 115; 230, 150]
               DstComponent  "Mux7"
               DstTerminal   3
             }
@@ -2431,6 +2455,7 @@ Plecs {
               Type          Signal
               SrcComponent  "e1^2"
               SrcTerminal   1
+              Points        [210, 165; 210, 160]
               DstComponent  "Mux7"
               DstTerminal   4
             }
@@ -2444,7 +2469,7 @@ Plecs {
                 DstTerminal   2
               }
               Branch {
-                Points        [145, 175]
+                Points        [145, 170]
                 DstComponent  "Mux7"
                 DstTerminal   5
               }
@@ -2453,7 +2478,7 @@ Plecs {
               Type          Signal
               SrcComponent  "From5"
               SrcTerminal   1
-              Points        [205, 210; 205, 185]
+              Points        [205, 210; 205, 180]
               DstComponent  "Mux7"
               DstTerminal   6
             }
@@ -2461,7 +2486,7 @@ Plecs {
               Type          Signal
               SrcComponent  "From8"
               SrcTerminal   1
-              Points        [215, 230; 215, 195]
+              Points        [215, 230; 215, 190]
               DstComponent  "Mux7"
               DstTerminal   7
             }
@@ -2469,7 +2494,7 @@ Plecs {
               Type          Signal
               SrcComponent  "From2"
               SrcTerminal   1
-              Points        [220, 250; 220, 205]
+              Points        [220, 250; 220, 200]
               DstComponent  "Mux7"
               DstTerminal   8
             }
@@ -2477,7 +2502,7 @@ Plecs {
               Type          Signal
               SrcComponent  "From10"
               SrcTerminal   1
-              Points        [225, 270; 225, 215]
+              Points        [225, 270; 225, 210]
               DstComponent  "Mux7"
               DstTerminal   9
             }
@@ -2491,7 +2516,7 @@ Plecs {
                 DstTerminal   2
               }
               Branch {
-                Points        [150, 75; 235, 75; 235, 145]
+                Points        [150, 75; 235, 75; 235, 140]
                 DstComponent  "Mux7"
                 DstTerminal   2
               }
@@ -2531,6 +2556,14 @@ Plecs {
                 DstComponent  "Out1"
                 DstTerminal   1
               }
+            }
+            Connection {
+              Type          Signal
+              SrcComponent  "From11"
+              SrcTerminal   1
+              Points        [230, 305; 230, 220]
+              DstComponent  "Mux7"
+              DstTerminal   10
             }
           }
         }
@@ -2878,30 +2911,10 @@ Plecs {
           }
         }
         Component {
-          Type          Constant
-          Name          "Constant"
-          Show          on
-          Position      [520, 680]
-          Direction     right
-          Flipped       off
-          LabelPosition south
-          Frame         [-10, -10; 10, 10]
-          Parameter {
-            Variable      "Value"
-            Value         "Gm_cv * wz_cv"
-            Show          off
-          }
-          Parameter {
-            Variable      "DataType"
-            Value         "10"
-            Show          off
-          }
-        }
-        Component {
           Type          Input
           Name          "Ro"
           Show          on
-          Position      [250, 590]
+          Position      [250, 195]
           Direction     right
           Flipped       off
           LabelPosition north
@@ -2920,7 +2933,7 @@ Plecs {
           Type          Goto
           Name          "Goto2"
           Show          off
-          Position      [300, 590]
+          Position      [300, 195]
           Direction     right
           Flipped       off
           LabelPosition south
@@ -3379,22 +3392,22 @@ Plecs {
       Flipped       off
       LabelPosition south
       Location      [0, 27; 2560, 1427]
-      State         "AAAA/wAAAAD9AAAAAgAAAAEAAAGBAAAE/PwCAAAAA/sAAAAUAFMAYQB2A"
+      State         "AAAA/wAAAAD9AAAAAgAAAAEAAAGBAAAEq/wCAAAAA/sAAAAUAFMAYQB2A"
 "GUAZABWAGkAZQB3AHMAAAAAHAAAAZQAAABoAP////sAAAAQAFoAbwBvAG0AQQByAGUAYQAAAAAA//"
-"///wAAADYA////+wAAAAwAVAByAGEAYwBlAHMBAAAAMAAABPwAAABoAP///wAAAAMAAAoAAAAAXfw"
-"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAACgAAAABSAP///wAACHsAAAT8AAAA"
+"///wAAADYA////+wAAAAwAVAByAGEAYwBlAHMBAAAAMAAABKsAAABoAP///wAAAAMAAAoAAAAArvw"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAACgAAAABSAP///wAACHsAAASrAAAA"
 "BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
 "AAAAA=="
       SavedViews    "AAAAAgAAAAEAAAAYAFMAdABlAGEAZAB5ACAAcwB0AGEAdABlP8SBKprzW"
 "n4/yZmZmZmZmgAAAAEAf/gAAAAAAAB/+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="
-      HeaderState   "{\"DefaultSecSize\":0,\"FirstSecSize\":200,\"Labels\":[\""
-"Delta\"],\"VisualIdxs\":[3]}"
+      HeaderState   "{\"DefaultSecSize\":100,\"FirstSecSize\":200,\"Labels\":["
+"\"Delta\"],\"VisualIdxs\":[3]}"
       PlotPalettes  "AAAAAQAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
       Axes          "1"
       TimeRange     "0"
       ScrollingMode "1"
       SingleTimeAxis "1"
-      Open          "1"
+      Open          "0"
       Ts            "-1"
       SampleLimit   "0"
       XAxisLabel    "Time [s]"
@@ -3439,11 +3452,11 @@ Plecs {
       Direction     up
       Flipped       off
       LabelPosition south
-      Location      [0, 41; 1283, 778]
+      Location      [0, 41; 1283, 787]
       State         "AAAA/wAAAAD9AAAAAgAAAAEAAAB4AAABlPwCAAAAA/sAAAAUAFMAYQB2A"
 "GUAZABWAGkAZQB3AHMAAAAAHAAAAZQAAABoAP////sAAAAQAFoAbwBvAG0AQQByAGUAYQAAAAAA//"
 "///wAAADYA////+wAAAAwAVAByAGEAYwBlAHMAAAAA2wAAANUAAABoAP///wAAAAMAAAUDAAAAiPw"
-"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAABQMAAABSAP///wAABQMAAAI6AAAA"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAABQMAAABSAP///wAABQMAAAJDAAAA"
 "BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
 "AAAAA=="
       SavedViews    "AAAAAgAAAAEAAAAYAFMAdABlAGEAZAB5ACAAcwB0AGEAdABlP8SBKprzW"
@@ -3791,7 +3804,6 @@ Plecs {
       Type          Signal
       SrcComponent  "V4"
       SrcTerminal   1
-      Points        [620, 540; 620, 525]
       DstComponent  "Controller"
       DstTerminal   4
     }
