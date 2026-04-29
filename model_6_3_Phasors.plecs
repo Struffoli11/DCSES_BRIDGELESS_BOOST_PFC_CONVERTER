@@ -4671,86 +4671,6 @@ Plecs {
             Direction     left
           }
         }
-        Component {
-          Type          Display
-          Name          "Display"
-          Show          on
-          Position      [555, 45]
-          Direction     up
-          Flipped       off
-          LabelPosition south
-          Frame         [-51, -11; 51, 11]
-          Parameter {
-            Variable      "Notation"
-            Value         "1"
-            Show          off
-          }
-          Parameter {
-            Variable      "Precision"
-            Value         "6"
-            Show          off
-          }
-        }
-        Component {
-          Type          Constant
-          Name          "Constant"
-          Show          on
-          Position      [410, 45]
-          Direction     right
-          Flipped       off
-          LabelPosition south
-          Frame         [-10, -10; 10, 10]
-          Parameter {
-            Variable      "Value"
-            Value         "Rl*0.1"
-            Show          off
-          }
-          Parameter {
-            Variable      "DataType"
-            Value         "10"
-            Show          off
-          }
-        }
-        Component {
-          Type          Constant
-          Name          "Constant1"
-          Show          on
-          Position      [410, 90]
-          Direction     right
-          Flipped       off
-          LabelPosition south
-          Frame         [-10, -10; 10, 10]
-          Parameter {
-            Variable      "Value"
-            Value         "L*0.1"
-            Show          off
-          }
-          Parameter {
-            Variable      "DataType"
-            Value         "10"
-            Show          off
-          }
-        }
-        Component {
-          Type          Display
-          Name          "Display1"
-          Show          on
-          Position      [555, 90]
-          Direction     up
-          Flipped       off
-          LabelPosition south
-          Frame         [-51, -11; 51, 11]
-          Parameter {
-            Variable      "Notation"
-            Value         "1"
-            Show          off
-          }
-          Parameter {
-            Variable      "Precision"
-            Value         "6"
-            Show          off
-          }
-        }
         Connection {
           Type          Signal
           SrcComponent  "PWM Block"
@@ -5142,20 +5062,6 @@ Plecs {
           Points        [310, 310]
           DstComponent  "Sum4"
           DstTerminal   2
-        }
-        Connection {
-          Type          Signal
-          SrcComponent  "Constant"
-          SrcTerminal   1
-          DstComponent  "Display"
-          DstTerminal   1
-        }
-        Connection {
-          Type          Signal
-          SrcComponent  "Constant1"
-          SrcTerminal   1
-          DstComponent  "Display1"
-          DstTerminal   1
         }
       }
     }
