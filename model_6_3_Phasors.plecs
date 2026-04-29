@@ -79,9 +79,9 @@ Plecs {
   ScriptsDialogGeometry "[1074 565 446 244]"
   ScriptsDialogSplitterPos "100"
   Schematic {
-    Location      [0, 27; 2560, 1353]
-    ZoomFactor    1.28751
-    SliderPosition [61, 0]
+    Location      [89, 541; 1280, 988]
+    ZoomFactor    0.916923
+    SliderPosition [0, 42]
     ShowBrowser   off
     BrowserWidth  143
     Component {
@@ -191,9 +191,9 @@ Plecs {
         Direction     right
       }
       Schematic {
-        Location      [610, 82; 2373, 1234]
-        ZoomFactor    1.75427
-        SliderPosition [72, 0]
+        Location      [1230, 349; 2693, 1364]
+        ZoomFactor    1.67105
+        SliderPosition [135, 0]
         ShowBrowser   off
         BrowserWidth  100
         Component {
@@ -789,12 +789,12 @@ Plecs {
           }
           Parameter {
             Variable      "kp"
-            Value         "0.062"
+            Value         "L*0.025"
             Show          off
           }
           Parameter {
             Variable      "ki"
-            Value         "0.1258"
+            Value         "Rl*0.025"
             Show          off
           }
           Parameter {
@@ -1562,12 +1562,12 @@ Plecs {
           }
           Parameter {
             Variable      "kp"
-            Value         "62"
+            Value         "L*62831"
             Show          off
           }
           Parameter {
             Variable      "ki"
-            Value         "1258"
+            Value         "Rl*62831"
             Show          off
           }
           Parameter {
@@ -3754,153 +3754,6 @@ Plecs {
           }
         }
         Component {
-          Type          Reference
-          SrcComponent  "Components/Control/Continuous/Continuous PID\\nContro"
-"ller"
-          Name          "Continuous PI\nController"
-          Show          off
-          Position      [235, 370]
-          Direction     up
-          Flipped       off
-          LabelPosition south
-          Frame         [-40, -25; 40, 25]
-          Parameter {
-            Variable      "cont_type"
-            Value         "3"
-            Show          off
-          }
-          Parameter {
-            Variable      "par_source"
-            Value         "1"
-            Show          off
-          }
-          Parameter {
-            Variable      "kp"
-            Value         "0.02"
-            Show          off
-          }
-          Parameter {
-            Variable      "ki"
-            Value         "0.32"
-            Show          off
-          }
-          Parameter {
-            Variable      "kd"
-            Value         "1"
-            Show          off
-          }
-          Parameter {
-            Variable      "kf"
-            Value         "1"
-            Show          off
-          }
-          Parameter {
-            Variable      "ex_reset"
-            Value         "1"
-            Show          off
-          }
-          Parameter {
-            Variable      "x0_source"
-            Value         "1"
-            Show          off
-          }
-          Parameter {
-            Variable      "x0"
-            Value         "0"
-            Show          off
-          }
-          Parameter {
-            Variable      "ex_sat"
-            Value         "1"
-            Show          off
-          }
-          Parameter {
-            Variable      "sat_lim"
-            Value         "1"
-            Show          off
-          }
-          Parameter {
-            Variable      "up_limit"
-            Value         "inf"
-            Show          off
-          }
-          Parameter {
-            Variable      "low_limit"
-            Value         "-inf"
-            Show          off
-          }
-          Parameter {
-            Variable      "aw_method"
-            Value         "1"
-            Show          off
-          }
-          Parameter {
-            Variable      "kbc"
-            Value         "1"
-            Show          off
-          }
-          Terminal {
-            Type          Input
-            Position      [-40, 0]
-            Direction     left
-          }
-          Terminal {
-            Type          Output
-            Position      [44, 0]
-            Direction     right
-          }
-          Terminal {
-            Type          Input
-            Position      [-5, -25]
-            Direction     up
-          }
-          Terminal {
-            Type          Input
-            Position      [5, -25]
-            Direction     up
-          }
-          Terminal {
-            Type          Input
-            Position      [15, -25]
-            Direction     up
-          }
-          Terminal {
-            Type          Input
-            Position      [-40, -15]
-            Direction     left
-          }
-          Terminal {
-            Type          Input
-            Position      [-40, 10]
-            Direction     left
-          }
-          Terminal {
-            Type          Input
-            Position      [25, -25]
-            Direction     up
-          }
-          Terminal {
-            Type          Input
-            Position      [35, -25]
-            Direction     up
-          }
-          Terminal {
-            Type          Input
-            Position      [-40, -20]
-            Direction     left
-          }
-          Terminal {
-            Type          Input
-            Position      [-40, -10]
-            Direction     left
-          }
-          Terminal {
-            Type          Input
-            Position      [-40, 20]
-            Direction     left
-          }
-        }
-        Component {
           Type          From
           Name          "From2"
           Show          off
@@ -4671,6 +4524,153 @@ Plecs {
             Show          off
           }
         }
+        Component {
+          Type          Reference
+          SrcComponent  "Components/Control/Continuous/Continuous PID\\nContro"
+"ller"
+          Name          "Continuous PID\nController"
+          Show          on
+          Position      [235, 370]
+          Direction     up
+          Flipped       off
+          LabelPosition south
+          Frame         [-40, -25; 40, 25]
+          Parameter {
+            Variable      "cont_type"
+            Value         "3"
+            Show          off
+          }
+          Parameter {
+            Variable      "par_source"
+            Value         "1"
+            Show          off
+          }
+          Parameter {
+            Variable      "kp"
+            Value         "0.1"
+            Show          off
+          }
+          Parameter {
+            Variable      "ki"
+            Value         "10"
+            Show          off
+          }
+          Parameter {
+            Variable      "kd"
+            Value         "1"
+            Show          off
+          }
+          Parameter {
+            Variable      "kf"
+            Value         "1"
+            Show          off
+          }
+          Parameter {
+            Variable      "ex_reset"
+            Value         "1"
+            Show          off
+          }
+          Parameter {
+            Variable      "x0_source"
+            Value         "1"
+            Show          off
+          }
+          Parameter {
+            Variable      "x0"
+            Value         "0"
+            Show          off
+          }
+          Parameter {
+            Variable      "ex_sat"
+            Value         "1"
+            Show          off
+          }
+          Parameter {
+            Variable      "sat_lim"
+            Value         "1"
+            Show          off
+          }
+          Parameter {
+            Variable      "up_limit"
+            Value         "inf"
+            Show          off
+          }
+          Parameter {
+            Variable      "low_limit"
+            Value         "-inf"
+            Show          off
+          }
+          Parameter {
+            Variable      "aw_method"
+            Value         "1"
+            Show          off
+          }
+          Parameter {
+            Variable      "kbc"
+            Value         "1"
+            Show          off
+          }
+          Terminal {
+            Type          Input
+            Position      [-40, 0]
+            Direction     left
+          }
+          Terminal {
+            Type          Output
+            Position      [44, 0]
+            Direction     right
+          }
+          Terminal {
+            Type          Input
+            Position      [-5, -25]
+            Direction     up
+          }
+          Terminal {
+            Type          Input
+            Position      [5, -25]
+            Direction     up
+          }
+          Terminal {
+            Type          Input
+            Position      [15, -25]
+            Direction     up
+          }
+          Terminal {
+            Type          Input
+            Position      [-40, -15]
+            Direction     left
+          }
+          Terminal {
+            Type          Input
+            Position      [-40, 10]
+            Direction     left
+          }
+          Terminal {
+            Type          Input
+            Position      [25, -25]
+            Direction     up
+          }
+          Terminal {
+            Type          Input
+            Position      [35, -25]
+            Direction     up
+          }
+          Terminal {
+            Type          Input
+            Position      [-40, -20]
+            Direction     left
+          }
+          Terminal {
+            Type          Input
+            Position      [-40, -10]
+            Direction     left
+          }
+          Terminal {
+            Type          Input
+            Position      [-40, 20]
+            Direction     left
+          }
+        }
         Connection {
           Type          Signal
           SrcComponent  "PWM Block"
@@ -4811,12 +4811,12 @@ Plecs {
           Type          Signal
           SrcComponent  "Sum"
           SrcTerminal   1
-          DstComponent  "Continuous PI\nController"
+          DstComponent  "Continuous PID\nController"
           DstTerminal   1
         }
         Connection {
           Type          Signal
-          SrcComponent  "Continuous PI\nController"
+          SrcComponent  "Continuous PID\nController"
           SrcTerminal   2
           DstComponent  "Sum4"
           DstTerminal   3
@@ -5217,17 +5217,19 @@ Plecs {
       Direction     up
       Flipped       off
       LabelPosition south
-      Location      [0, 27; 2560, 1427]
-      State         "AAAA/wAAAAD9AAAAAgAAAAEAAAB4AAABlPwCAAAAA/sAAAAUAFMAYQB2A"
-"GUAZABWAGkAZQB3AHMAAAAAHAAAAZQAAABoAP////sAAAAQAFoAbwBvAG0AQQByAGUAYQAAAAAA//"
-"///wAAADYA////+wAAAAwAVAByAGEAYwBlAHMAAAAA2wAAANUAAABoAP///wAAAAMAAAoAAAAAiPw"
-"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAACgAAAABSAP///wAACgAAAATRAAAA"
+      Location      [0, 23; 2560, 1371]
+      State         "AAAA/wAAAAD9AAAAAgAAAAEAAAB4AAAEnfwCAAAAA/sAAAAUAFMAYQB2A"
+"GUAZABWAGkAZQB3AHMBAAAAMAAAA+UAAABoAP////sAAAAQAFoAbwBvAG0AQQByAGUAYQAAAAAA//"
+"///wAAADYA////+wAAAAwAVAByAGEAYwBlAHMBAAAEGQAAALQAAABoAP///wAAAAMAAAoAAAAAiPw"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAACgAAAABSAP///wAACYQAAASdAAAA"
 "BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
 "AAAAA=="
-      SavedViews    "AAAAAgAAAAEAAAAYAFMAdABlAGEAZAB5ACAAcwB0AGEAdABlP8SBKprzW"
-"n4/yZmZmZmZmgAAAAEAf/gAAAAAAAB/+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="
-      HeaderState   "{\"DefaultSecSize\":0,\"FirstSecSize\":234,\"Labels\":[\""
-"Delta\",\"THD\"],\"VisualIdxs\":[3,10]}"
+      SavedViews    "AAAAAgAAAAIAAAAYAFMAdABlAGEAZAB5ACAAcwB0AGEAdABlP8SBKprzW"
+"n4/yZmZmZmZmgAAAAEAf/gAAAAAAAB/+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABgAUwBhAH"
+"YAZQBkACAAdgBpAGUAdwAgADEAAAAAAAAAAD/wAAAAAAAAAAAAAQDAdUAAAAAAAECK4AAAAAAAAT/"
+"TM4cWCVUCP9R7SApazDIB"
+      HeaderState   "{\"DefaultSecSize\":100,\"FirstSecSize\":234,\"Labels\":["
+"\"Delta\",\"THD\"],\"VisualIdxs\":[3,10]}"
       PlotPalettes  "AAAAAQAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
       Axes          "1"
       TimeRange     "0"
@@ -5450,11 +5452,11 @@ Plecs {
       Direction     up
       Flipped       off
       LabelPosition south
-      Location      [0, 27; 2560, 1427]
-      State         "AAAA/wAAAAD9AAAAAgAAAAEAAAB4AAAEq/wCAAAAA/sAAAAUAFMAYQB2A"
+      Location      [1044, 251; 2330, 1185]
+      State         "AAAA/wAAAAD9AAAAAgAAAAEAAAB4AAAC2fwCAAAAA/sAAAAUAFMAYQB2A"
 "GUAZABWAGkAZQB3AHMAAAAAHAAAAZQAAABoAP////sAAAAQAFoAbwBvAG0AQQByAGUAYQAAAAAA//"
-"///wAAADYA////+wAAAAwAVAByAGEAYwBlAHMBAAAAMAAABKsAAABoAP///wAAAAMAAAoAAAAArvw"
-"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAACgAAAABSAP///wAACYQAAASrAAAA"
+"///wAAADYA////+wAAAAwAVAByAGEAYwBlAHMBAAAAMAAAAtkAAABoAP///wAAAAMAAAUGAAAArvw"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAABQYAAABSAP///wAABIoAAALZAAAA"
 "BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
 "AAAAA=="
       SavedViews    "AAAAAgAAAAEAAAAYAFMAdABlAGEAZAB5ACAAcwB0AGEAdABlP8SBKprzW"
@@ -5466,7 +5468,7 @@ Plecs {
       TimeRange     "0"
       ScrollingMode "1"
       SingleTimeAxis "1"
-      Open          "0"
+      Open          "1"
       Ts            "-1"
       SampleLimit   "0"
       XAxisLabel    "Time [s]"

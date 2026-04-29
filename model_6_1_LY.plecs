@@ -40,8 +40,8 @@ Plecs {
 "lent delay\n\nRv.Ti = 8/C*Rv.Tp*Rv.Tp;\nRv.Tn = 4*Rv.Tp;\n\nRv.Kp = Rv.Tn/Rv."
 "Ti;\nRv.Ki = 1/Rv.Ti;\n\n%parametri articolo\nGm_cv =  0.026; %Outer--loop dc"
 " gain\nfz_cv = 66.78; %Zero-Frequency (Hz)\nwz_cv = fz_cv * (2 * pi); %natura"
-"l frequency \nKc = 0.2%controller inner loop gain\nFswc = 100e3 %switch frequ"
-"ency"
+"l frequency \nKc = 0.002%controller inner loop gain\nFswc = 100e3 %switch fre"
+"quency"
   InitialState  "1"
   SystemState   ""
   TaskingMode   "1"
@@ -1116,7 +1116,7 @@ Plecs {
           Type          Goto
           Name          "Goto1"
           Show          off
-          Position      [455, 350]
+          Position      [500, 350]
           Direction     right
           Flipped       off
           LabelPosition south
@@ -2977,6 +2977,113 @@ Plecs {
             Show          off
           }
         }
+        Component {
+          Type          Sum
+          Name          "Sum1"
+          Show          off
+          Position      [460, 350]
+          Direction     up
+          Flipped       off
+          LabelPosition south
+          Parameter {
+            Variable      "IconShape"
+            Value         "2"
+            Show          off
+          }
+          Parameter {
+            Variable      "Inputs"
+            Value         "|++"
+            Show          off
+          }
+          Parameter {
+            Variable      "DataType"
+            Value         "11"
+            Show          off
+          }
+          Parameter {
+            Variable      "DataTypeOverflowMode"
+            Value         "1"
+            Show          off
+          }
+        }
+        Component {
+          Type          Function
+          Name          "x_alpha_ff"
+          Show          on
+          Position      [425, 150]
+          Direction     right
+          Flipped       off
+          LabelPosition south
+          Frame         [-35, -10; 35, 10]
+          Parameter {
+            Variable      "f(u)"
+            Value         " (1/2)*(Vin/Rl)*(  1 - ( sqrt( 1 - (8*(Rl/u[2]) * ("
+" (u[1]*u[1]) / ((Vin)^2) )) ) )  )"
+            Show          off
+          }
+        }
+        Component {
+          Type          SignalMux
+          Name          "Mux2"
+          Show          off
+          Position      [335, 150]
+          Direction     right
+          Flipped       off
+          LabelPosition south
+          Parameter {
+            Variable      "Width"
+            Value         "2"
+            Show          off
+          }
+        }
+        Component {
+          Type          Goto
+          Name          "Goto8"
+          Show          off
+          Position      [490, 150]
+          Direction     right
+          Flipped       off
+          LabelPosition south
+          Parameter {
+            Variable      "Tag"
+            Value         "ff"
+            Show          off
+          }
+          Parameter {
+            Variable      "Visibility"
+            Value         "1"
+            Show          off
+          }
+          Parameter {
+            Variable      "NoMatchingCounterpartAction"
+            Value         "2"
+            Show          off
+          }
+        }
+        Component {
+          Type          From
+          Name          "From8"
+          Show          off
+          Position      [440, 405]
+          Direction     right
+          Flipped       off
+          LabelPosition south
+          Parameter {
+            Variable      "Tag"
+            Value         "ff"
+            Show          off
+          }
+          Parameter {
+            Variable      "Visibility"
+            Value         "1"
+            Show          off
+          }
+          Parameter {
+            Variable      "NoMatchingCounterpartAction"
+            Value         "1"
+            Show          off
+          }
+        }
         Connection {
           Type          Signal
           SrcComponent  "Mux4"
@@ -3020,27 +3127,6 @@ Plecs {
           SrcTerminal   1
           DstComponent  "G_cv(s)"
           DstTerminal   1
-        }
-        Connection {
-          Type          Signal
-          SrcComponent  "G_cv(s)"
-          SrcTerminal   2
-          DstComponent  "Goto1"
-          DstTerminal   1
-        }
-        Connection {
-          Type          Signal
-          SrcComponent  "V_dc"
-          SrcTerminal   1
-          Points        [315, 425]
-          Branch {
-            DstComponent  "Sum3"
-            DstTerminal   3
-          }
-          Branch {
-            DstComponent  "Sum5"
-            DstTerminal   2
-          }
         }
         Connection {
           Type          Signal
@@ -3112,8 +3198,15 @@ Plecs {
           }
           Branch {
             Points        [275, 325]
-            DstComponent  "Goto4"
-            DstTerminal   1
+            Branch {
+              DstComponent  "Goto4"
+              DstTerminal   1
+            }
+            Branch {
+              Points        [180, 325; 180, 145]
+              DstComponent  "Mux2"
+              DstTerminal   2
+            }
           }
         }
         Connection {
@@ -3274,13 +3367,6 @@ Plecs {
         }
         Connection {
           Type          Signal
-          SrcComponent  "Ro"
-          SrcTerminal   1
-          DstComponent  "Goto2"
-          DstTerminal   1
-        }
-        Connection {
-          Type          Signal
           SrcComponent  "From2"
           SrcTerminal   1
           DstComponent  "Mux1"
@@ -3305,6 +3391,71 @@ Plecs {
           Branch {
             Points        [820, 435]
             DstComponent  "Mux"
+            DstTerminal   2
+          }
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "G_cv(s)"
+          SrcTerminal   2
+          DstComponent  "Sum1"
+          DstTerminal   2
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Sum1"
+          SrcTerminal   1
+          DstComponent  "Goto1"
+          DstTerminal   1
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Mux2"
+          SrcTerminal   1
+          DstComponent  "x_alpha_ff"
+          DstTerminal   1
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Ro"
+          SrcTerminal   1
+          Points        [280, 195]
+          Branch {
+            DstComponent  "Goto2"
+            DstTerminal   1
+          }
+          Branch {
+            Points        [280, 155]
+            DstComponent  "Mux2"
+            DstTerminal   3
+          }
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "x_alpha_ff"
+          SrcTerminal   2
+          DstComponent  "Goto8"
+          DstTerminal   1
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "From8"
+          SrcTerminal   1
+          Points        [460, 405]
+          DstComponent  "Sum1"
+          DstTerminal   3
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "V_dc"
+          SrcTerminal   1
+          Points        [315, 425]
+          Branch {
+            DstComponent  "Sum3"
+            DstTerminal   3
+          }
+          Branch {
+            DstComponent  "Sum5"
             DstTerminal   2
           }
         }
@@ -3400,14 +3551,14 @@ Plecs {
 "AAAAA=="
       SavedViews    "AAAAAgAAAAEAAAAYAFMAdABlAGEAZAB5ACAAcwB0AGEAdABlP8SBKprzW"
 "n4/yZmZmZmZmgAAAAEAf/gAAAAAAAB/+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="
-      HeaderState   "{\"DefaultSecSize\":100,\"FirstSecSize\":200,\"Labels\":["
-"\"Delta\"],\"VisualIdxs\":[3]}"
+      HeaderState   "{\"DefaultSecSize\":0,\"FirstSecSize\":200,\"Labels\":[\""
+"Delta\"],\"VisualIdxs\":[3]}"
       PlotPalettes  "AAAAAQAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
       Axes          "1"
       TimeRange     "0"
       ScrollingMode "1"
       SingleTimeAxis "1"
-      Open          "0"
+      Open          "1"
       Ts            "-1"
       SampleLimit   "0"
       XAxisLabel    "Time [s]"
@@ -3452,11 +3603,11 @@ Plecs {
       Direction     up
       Flipped       off
       LabelPosition south
-      Location      [0, 41; 1283, 787]
+      Location      [0, 41; 1283, 796]
       State         "AAAA/wAAAAD9AAAAAgAAAAEAAAB4AAABlPwCAAAAA/sAAAAUAFMAYQB2A"
 "GUAZABWAGkAZQB3AHMAAAAAHAAAAZQAAABoAP////sAAAAQAFoAbwBvAG0AQQByAGUAYQAAAAAA//"
 "///wAAADYA////+wAAAAwAVAByAGEAYwBlAHMAAAAA2wAAANUAAABoAP///wAAAAMAAAUDAAAAiPw"
-"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAABQMAAABSAP///wAABQMAAAJDAAAA"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAABQMAAABSAP///wAABQMAAAJMAAAA"
 "BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
 "AAAAA=="
       SavedViews    "AAAAAgAAAAEAAAAYAFMAdABlAGEAZAB5ACAAcwB0AGEAdABlP8SBKprzW"
