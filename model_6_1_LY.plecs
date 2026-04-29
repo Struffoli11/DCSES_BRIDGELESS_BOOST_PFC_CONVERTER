@@ -433,7 +433,7 @@ Plecs {
           Type          Input
           Name          "Vg"
           Show          on
-          Position      [250, 255]
+          Position      [225, 255]
           Direction     right
           Flipped       off
           LabelPosition north
@@ -452,7 +452,7 @@ Plecs {
           Type          Input
           Name          "V_dc"
           Show          on
-          Position      [250, 425]
+          Position      [225, 425]
           Direction     right
           Flipped       off
           LabelPosition north
@@ -471,7 +471,7 @@ Plecs {
           Type          Input
           Name          "I_ac"
           Show          on
-          Position      [250, 480]
+          Position      [225, 480]
           Direction     right
           Flipped       off
           LabelPosition north
@@ -490,7 +490,7 @@ Plecs {
           Type          Input
           Name          "Vo*"
           Show          on
-          Position      [250, 350]
+          Position      [225, 350]
           Direction     right
           Flipped       off
           LabelPosition north
@@ -509,7 +509,7 @@ Plecs {
           Type          Sum
           Name          "Sum3"
           Show          off
-          Position      [315, 350]
+          Position      [290, 350]
           Direction     up
           Flipped       off
           LabelPosition south
@@ -538,7 +538,7 @@ Plecs {
           Type          Function
           Name          "Eq.75"
           Show          off
-          Position      [480, 250]
+          Position      [455, 250]
           Direction     right
           Flipped       off
           LabelPosition north
@@ -553,7 +553,7 @@ Plecs {
           Type          SignalMux
           Name          "Mux4"
           Show          off
-          Position      [380, 250]
+          Position      [355, 250]
           Direction     right
           Flipped       off
           LabelPosition south
@@ -1116,7 +1116,7 @@ Plecs {
           Type          Goto
           Name          "Goto1"
           Show          off
-          Position      [500, 350]
+          Position      [470, 350]
           Direction     right
           Flipped       off
           LabelPosition south
@@ -1140,7 +1140,7 @@ Plecs {
           Type          From
           Name          "From1"
           Show          off
-          Position      [335, 230]
+          Position      [310, 230]
           Direction     right
           Flipped       off
           LabelPosition south
@@ -1222,7 +1222,7 @@ Plecs {
           Type          Goto
           Name          "Goto3"
           Show          off
-          Position      [315, 290]
+          Position      [290, 290]
           Direction     right
           Flipped       off
           LabelPosition south
@@ -1270,7 +1270,7 @@ Plecs {
           Type          Goto
           Name          "Goto4"
           Show          off
-          Position      [315, 325]
+          Position      [290, 325]
           Direction     right
           Flipped       off
           LabelPosition south
@@ -1318,7 +1318,7 @@ Plecs {
           Type          From
           Name          "From7"
           Show          off
-          Position      [460, 450]
+          Position      [435, 450]
           Direction     right
           Flipped       off
           LabelPosition south
@@ -1344,7 +1344,7 @@ Plecs {
 "ller"
           Name          "G_cv(s)"
           Show          on
-          Position      [390, 350]
+          Position      [365, 350]
           Direction     up
           Flipped       off
           LabelPosition south
@@ -1493,11 +1493,11 @@ Plecs {
           Direction     up
           Flipped       off
           LabelPosition south
-          Location      [0, 27; 1280, 784]
+          Location      [0, 27; 1280, 793]
           State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAb"
 "wBvAG0AQQByAGUAYQAAAAAA/////wAAADYA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAA"
 "AA/////wAAAGgA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABoAP///wAAAAMAAAAAAAA"
-"AAPwBAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABSAP///wAABQAAAALa"
+"AAPwBAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABSAP///wAABQAAAALj"
 "AAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AA"
 "AAAAAAAAA=="
           SavedViews    "AAAAAgAAAAA="
@@ -1575,7 +1575,7 @@ Plecs {
           Type          Display
           Name          "PF"
           Show          on
-          Position      [420, 510]
+          Position      [395, 510]
           Direction     up
           Flipped       off
           LabelPosition northNortheast
@@ -1595,7 +1595,7 @@ Plecs {
           Type          Subsystem
           Name          "PF_calculation"
           Show          on
-          Position      [330, 510]
+          Position      [305, 510]
           Direction     up
           Flipped       off
           LabelPosition south
@@ -2700,7 +2700,7 @@ Plecs {
           Type          Subsystem
           Name          "sgn(Vg)"
           Show          on
-          Position      [390, 280]
+          Position      [365, 280]
           Direction     up
           Flipped       off
           LabelPosition south
@@ -2866,7 +2866,7 @@ Plecs {
           Type          Goto
           Name          "Goto9"
           Show          off
-          Position      [440, 280]
+          Position      [415, 280]
           Direction     right
           Flipped       off
           LabelPosition south
@@ -2914,7 +2914,7 @@ Plecs {
           Type          Input
           Name          "Ro"
           Show          on
-          Position      [250, 195]
+          Position      [225, 195]
           Direction     right
           Flipped       off
           LabelPosition north
@@ -2933,7 +2933,7 @@ Plecs {
           Type          Goto
           Name          "Goto2"
           Show          off
-          Position      [300, 195]
+          Position      [275, 195]
           Direction     right
           Flipped       off
           LabelPosition south
@@ -2981,7 +2981,7 @@ Plecs {
           Type          Sum
           Name          "Sum1"
           Show          off
-          Position      [460, 350]
+          Position      [435, 350]
           Direction     up
           Flipped       off
           LabelPosition south
@@ -3010,7 +3010,7 @@ Plecs {
           Type          Function
           Name          "x_alpha_ff"
           Show          on
-          Position      [425, 150]
+          Position      [400, 150]
           Direction     right
           Flipped       off
           LabelPosition south
@@ -3026,7 +3026,7 @@ Plecs {
           Type          SignalMux
           Name          "Mux2"
           Show          off
-          Position      [335, 150]
+          Position      [310, 150]
           Direction     right
           Flipped       off
           LabelPosition south
@@ -3064,13 +3064,37 @@ Plecs {
           Type          From
           Name          "From8"
           Show          off
-          Position      [440, 405]
+          Position      [415, 405]
           Direction     right
           Flipped       off
           LabelPosition south
           Parameter {
             Variable      "Tag"
             Value         "ff"
+            Show          off
+          }
+          Parameter {
+            Variable      "Visibility"
+            Value         "1"
+            Show          off
+          }
+          Parameter {
+            Variable      "NoMatchingCounterpartAction"
+            Value         "1"
+            Show          off
+          }
+        }
+        Component {
+          Type          From
+          Name          "From9"
+          Show          off
+          Position      [275, 145]
+          Direction     right
+          Flipped       off
+          LabelPosition south
+          Parameter {
+            Variable      "Tag"
+            Value         "Vdc*"
             Show          off
           }
           Parameter {
@@ -3109,7 +3133,7 @@ Plecs {
           Type          Signal
           SrcComponent  "From1"
           SrcTerminal   1
-          Points        [365, 230]
+          Points        [340, 230]
           DstComponent  "Mux4"
           DstTerminal   2
         }
@@ -3132,21 +3156,21 @@ Plecs {
           Type          Signal
           SrcComponent  "Vg"
           SrcTerminal   1
-          Points        [275, 255]
+          Points        [250, 255]
           Branch {
-            Points        [335, 255]
+            Points        [310, 255]
             Branch {
               DstComponent  "Mux4"
               DstTerminal   3
             }
             Branch {
-              Points        [335, 280]
+              Points        [310, 280]
               DstComponent  "sgn(Vg)"
               DstTerminal   1
             }
           }
           Branch {
-            Points        [275, 290]
+            Points        [250, 290]
             DstComponent  "Goto3"
             DstTerminal   1
           }
@@ -3191,35 +3215,28 @@ Plecs {
           Type          Signal
           SrcComponent  "Vo*"
           SrcTerminal   1
-          Points        [275, 350]
+          Points        [250, 350]
           Branch {
             DstComponent  "Sum3"
             DstTerminal   2
           }
           Branch {
-            Points        [275, 325]
-            Branch {
-              DstComponent  "Goto4"
-              DstTerminal   1
-            }
-            Branch {
-              Points        [180, 325; 180, 145]
-              DstComponent  "Mux2"
-              DstTerminal   2
-            }
+            Points        [250, 325]
+            DstComponent  "Goto4"
+            DstTerminal   1
           }
         }
         Connection {
           Type          Signal
           SrcComponent  "I_ac"
           SrcTerminal   1
-          Points        [275, 480]
+          Points        [250, 480]
           Branch {
             DstComponent  "Sum4"
             DstTerminal   2
           }
           Branch {
-            Points        [275, 510]
+            Points        [250, 510]
             DstComponent  "PF_calculation"
             DstTerminal   1
           }
@@ -3419,13 +3436,13 @@ Plecs {
           Type          Signal
           SrcComponent  "Ro"
           SrcTerminal   1
-          Points        [280, 195]
+          Points        [255, 195]
           Branch {
             DstComponent  "Goto2"
             DstTerminal   1
           }
           Branch {
-            Points        [280, 155]
+            Points        [255, 155]
             DstComponent  "Mux2"
             DstTerminal   3
           }
@@ -3441,7 +3458,7 @@ Plecs {
           Type          Signal
           SrcComponent  "From8"
           SrcTerminal   1
-          Points        [460, 405]
+          Points        [435, 405]
           DstComponent  "Sum1"
           DstTerminal   3
         }
@@ -3449,7 +3466,7 @@ Plecs {
           Type          Signal
           SrcComponent  "V_dc"
           SrcTerminal   1
-          Points        [315, 425]
+          Points        [290, 425]
           Branch {
             DstComponent  "Sum3"
             DstTerminal   3
@@ -3458,6 +3475,13 @@ Plecs {
             DstComponent  "Sum5"
             DstTerminal   2
           }
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "From9"
+          SrcTerminal   1
+          DstComponent  "Mux2"
+          DstTerminal   2
         }
         Annotation {
           Name          "<html><body>\n<p><span style=\" font-weight:700;\">e2"
@@ -3472,7 +3496,7 @@ Plecs {
         Annotation {
           Name          "<html><body>\n<p><span style=\" font-weight:700;\">u<"
 "/span></p></body></html>"
-          Position      [795, 330]
+          Position      [820, 330]
         } 
         Annotation {
           Name          base64 "PGh0bWw+PGJvZHk+CjxwPjxzcGFuIHN0eWxlPSIgZm9udC"
@@ -3493,7 +3517,7 @@ Plecs {
         Annotation {
           Name          "<html><body>\n<p>u[1] =I_L_peak</p>\n<p>u[2] = Vg</p>"
 "</body></html>"
-          Position      [425, 230]
+          Position      [400, 230]
         } 
         Annotation {
           Name          "<html><body>\n<p>sgn(Vg)</p></body></html>"
@@ -3558,7 +3582,7 @@ Plecs {
       TimeRange     "0"
       ScrollingMode "1"
       SingleTimeAxis "1"
-      Open          "1"
+      Open          "0"
       Ts            "-1"
       SampleLimit   "0"
       XAxisLabel    "Time [s]"

@@ -191,7 +191,7 @@ Plecs {
         Direction     right
       }
       Schematic {
-        Location      [1230, 349; 2693, 1364]
+        Location      [1097, 349; 2560, 1364]
         ZoomFactor    1.67105
         SliderPosition [135, 0]
         ShowBrowser   off
@@ -789,12 +789,12 @@ Plecs {
           }
           Parameter {
             Variable      "kp"
-            Value         "L*0.025"
+            Value         "L*0.1"
             Show          off
           }
           Parameter {
             Variable      "ki"
-            Value         "Rl*0.025"
+            Value         "Rl*0.1"
             Show          off
           }
           Parameter {
@@ -4671,6 +4671,86 @@ Plecs {
             Direction     left
           }
         }
+        Component {
+          Type          Display
+          Name          "Display"
+          Show          on
+          Position      [555, 45]
+          Direction     up
+          Flipped       off
+          LabelPosition south
+          Frame         [-51, -11; 51, 11]
+          Parameter {
+            Variable      "Notation"
+            Value         "1"
+            Show          off
+          }
+          Parameter {
+            Variable      "Precision"
+            Value         "6"
+            Show          off
+          }
+        }
+        Component {
+          Type          Constant
+          Name          "Constant"
+          Show          on
+          Position      [410, 45]
+          Direction     right
+          Flipped       off
+          LabelPosition south
+          Frame         [-10, -10; 10, 10]
+          Parameter {
+            Variable      "Value"
+            Value         "Rl*0.1"
+            Show          off
+          }
+          Parameter {
+            Variable      "DataType"
+            Value         "10"
+            Show          off
+          }
+        }
+        Component {
+          Type          Constant
+          Name          "Constant1"
+          Show          on
+          Position      [410, 90]
+          Direction     right
+          Flipped       off
+          LabelPosition south
+          Frame         [-10, -10; 10, 10]
+          Parameter {
+            Variable      "Value"
+            Value         "L*0.1"
+            Show          off
+          }
+          Parameter {
+            Variable      "DataType"
+            Value         "10"
+            Show          off
+          }
+        }
+        Component {
+          Type          Display
+          Name          "Display1"
+          Show          on
+          Position      [555, 90]
+          Direction     up
+          Flipped       off
+          LabelPosition south
+          Frame         [-51, -11; 51, 11]
+          Parameter {
+            Variable      "Notation"
+            Value         "1"
+            Show          off
+          }
+          Parameter {
+            Variable      "Precision"
+            Value         "6"
+            Show          off
+          }
+        }
         Connection {
           Type          Signal
           SrcComponent  "PWM Block"
@@ -5063,6 +5143,20 @@ Plecs {
           DstComponent  "Sum4"
           DstTerminal   2
         }
+        Connection {
+          Type          Signal
+          SrcComponent  "Constant"
+          SrcTerminal   1
+          DstComponent  "Display"
+          DstTerminal   1
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "Constant1"
+          SrcTerminal   1
+          DstComponent  "Display1"
+          DstTerminal   1
+        }
       }
     }
     Component {
@@ -5217,25 +5311,25 @@ Plecs {
       Direction     up
       Flipped       off
       LabelPosition south
-      Location      [0, 23; 2560, 1371]
-      State         "AAAA/wAAAAD9AAAAAgAAAAEAAAB4AAAEnfwCAAAAA/sAAAAUAFMAYQB2A"
-"GUAZABWAGkAZQB3AHMBAAAAMAAAA+UAAABoAP////sAAAAQAFoAbwBvAG0AQQByAGUAYQAAAAAA//"
-"///wAAADYA////+wAAAAwAVAByAGEAYwBlAHMBAAAEGQAAALQAAABoAP///wAAAAMAAAoAAAAAiPw"
-"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAACgAAAABSAP///wAACYQAAASdAAAA"
+      Location      [0, 27; 2560, 1384]
+      State         "AAAA/wAAAAD9AAAAAgAAAAEAAAB4AAAEpvwCAAAAA/sAAAAUAFMAYQB2A"
+"GUAZABWAGkAZQB3AHMBAAAAMAAAA+0AAABoAP////sAAAAQAFoAbwBvAG0AQQByAGUAYQAAAAAA//"
+"///wAAADYA////+wAAAAwAVAByAGEAYwBlAHMBAAAEIQAAALUAAABoAP///wAAAAMAAAoAAAAAiPw"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAACgAAAABSAP///wAACYQAAASmAAAA"
 "BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
 "AAAAA=="
       SavedViews    "AAAAAgAAAAIAAAAYAFMAdABlAGEAZAB5ACAAcwB0AGEAdABlP8SBKprzW"
 "n4/yZmZmZmZmgAAAAEAf/gAAAAAAAB/+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABgAUwBhAH"
-"YAZQBkACAAdgBpAGUAdwAgADEAAAAAAAAAAD/wAAAAAAAAAAAAAQDAdUAAAAAAAECK4AAAAAAAAT/"
+"YAZQBkACAAdgBpAGUAdwAgADEAAAAAAAAAAD/wAAAAAAAAAAAAAQB/+AAAAAAAAH/4AAAAAAAAAT/"
 "TM4cWCVUCP9R7SApazDIB"
-      HeaderState   "{\"DefaultSecSize\":100,\"FirstSecSize\":234,\"Labels\":["
-"\"Delta\",\"THD\"],\"VisualIdxs\":[3,10]}"
+      HeaderState   "{\"DefaultSecSize\":0,\"FirstSecSize\":234,\"Labels\":[\""
+"Delta\",\"THD\"],\"VisualIdxs\":[3,10]}"
       PlotPalettes  "AAAAAQAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
       Axes          "1"
       TimeRange     "0"
       ScrollingMode "1"
       SingleTimeAxis "1"
-      Open          "1"
+      Open          "0"
       Ts            "-1"
       SampleLimit   "0"
       XAxisLabel    "Time [s]"
@@ -5452,17 +5546,17 @@ Plecs {
       Direction     up
       Flipped       off
       LabelPosition south
-      Location      [1044, 251; 2330, 1185]
-      State         "AAAA/wAAAAD9AAAAAgAAAAEAAAB4AAAC2fwCAAAAA/sAAAAUAFMAYQB2A"
+      Location      [1044, 251; 2330, 1194]
+      State         "AAAA/wAAAAD9AAAAAgAAAAEAAAB4AAAC4vwCAAAAA/sAAAAUAFMAYQB2A"
 "GUAZABWAGkAZQB3AHMAAAAAHAAAAZQAAABoAP////sAAAAQAFoAbwBvAG0AQQByAGUAYQAAAAAA//"
-"///wAAADYA////+wAAAAwAVAByAGEAYwBlAHMBAAAAMAAAAtkAAABoAP///wAAAAMAAAUGAAAArvw"
-"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAABQYAAABSAP///wAABIoAAALZAAAA"
+"///wAAADYA////+wAAAAwAVAByAGEAYwBlAHMBAAAAMAAAAuIAAABoAP///wAAAAMAAAUGAAAArvw"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAABQYAAABSAP///wAABIoAAALiAAAA"
 "BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
 "AAAAA=="
       SavedViews    "AAAAAgAAAAEAAAAYAFMAdABlAGEAZAB5ACAAcwB0AGEAdABlP8SBKprzW"
 "n4/yZmZmZmZmgAAAAEAf/gAAAAAAAB/+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="
-      HeaderState   "{\"DefaultSecSize\":0,\"FirstSecSize\":200,\"Labels\":[\""
-"Delta\",\"THD\"],\"VisualIdxs\":[3,10]}"
+      HeaderState   "{\"DefaultSecSize\":100,\"FirstSecSize\":200,\"Labels\":["
+"\"Delta\",\"THD\"],\"VisualIdxs\":[3,10]}"
       PlotPalettes  "AAAAAQAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
       Axes          "1"
       TimeRange     "0"

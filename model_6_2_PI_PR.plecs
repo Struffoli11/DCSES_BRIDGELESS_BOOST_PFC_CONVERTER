@@ -91,7 +91,7 @@ Plecs {
       }
       Parameter {
         Variable      "phi"
-        Value         "pi"
+        Value         "0"
         Show          off
       }
     }
@@ -284,11 +284,11 @@ Plecs {
       Direction     up
       Flipped       off
       LabelPosition south
-      Location      [0, 27; 1280, 775]
+      Location      [0, 27; 1280, 784]
       State         "AAAA/wAAAAD9AAAAAgAAAAEAAAB4AAABlPwCAAAAA/sAAAAUAFMAYQB2A"
 "GUAZABWAGkAZQB3AHMAAAAAHAAAAZQAAABoAP////sAAAAQAFoAbwBvAG0AQQByAGUAYQAAAAAA//"
 "///wAAADYA////+wAAAAwAVAByAGEAYwBlAHMAAAAA2wAAANUAAABoAP///wAAAAMAAAUAAAAAiPw"
-"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAABQAAAABSAP///wAABQAAAAJFAAAA"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAABQAAAABSAP///wAABQAAAAJOAAAA"
 "BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
 "AAAAA=="
       SavedViews    "AAAAAgAAAAEAAAAYAFMAdABlAGEAZAB5ACAAcwB0AGEAdABlP8SBKprzW"
@@ -300,7 +300,7 @@ Plecs {
       TimeRange     "0"
       ScrollingMode "1"
       SingleTimeAxis "1"
-      Open          "1"
+      Open          "0"
       Ts            "-1"
       SampleLimit   "0"
       XAxisLabel    "Time [s]"
@@ -1098,12 +1098,12 @@ Plecs {
           }
           Parameter {
             Variable      "up_limit"
-            Value         "25"
+            Value         "inf"
             Show          off
           }
           Parameter {
             Variable      "low_limit"
-            Value         "-25"
+            Value         "-inf"
             Show          off
           }
           Parameter {
@@ -3415,46 +3415,6 @@ Plecs {
         Direction     left
       }
     }
-    Component {
-      Type          Display
-      Name          "Display"
-      Show          on
-      Position      [1130, 370]
-      Direction     up
-      Flipped       off
-      LabelPosition south
-      Frame         [-31, -11; 31, 11]
-      Parameter {
-        Variable      "Notation"
-        Value         "1"
-        Show          off
-      }
-      Parameter {
-        Variable      "Precision"
-        Value         "4"
-        Show          off
-      }
-    }
-    Component {
-      Type          Constant
-      Name          "Constant3"
-      Show          on
-      Position      [1025, 370]
-      Direction     right
-      Flipped       off
-      LabelPosition south
-      Frame         [-15, -10; 15, 10]
-      Parameter {
-        Variable      "Value"
-        Value         "Rv.Ki"
-        Show          off
-      }
-      Parameter {
-        Variable      "DataType"
-        Value         "10"
-        Show          off
-      }
-    }
     Connection {
       Type          Wire
       SrcComponent  "Am1"
@@ -3733,13 +3693,6 @@ Plecs {
       Points        [810, 165]
       DstComponent  "Am2"
       DstTerminal   2
-    }
-    Connection {
-      Type          Signal
-      SrcComponent  "Constant3"
-      SrcTerminal   1
-      DstComponent  "Display"
-      DstTerminal   1
     }
     Connection {
       Type          Signal
