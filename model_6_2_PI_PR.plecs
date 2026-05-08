@@ -66,7 +66,7 @@ Plecs {
   ScriptsDialogGeometry "[1074 565 446 244]"
   ScriptsDialogSplitterPos "100"
   Schematic {
-    Location      [0, 27; 2560, 1353]
+    Location      [0, 26; 1539, 827]
     ZoomFactor    1.25998
     SliderPosition [0, 0]
     ShowBrowser   off
@@ -781,7 +781,7 @@ Plecs {
         Direction     down
       }
       Schematic {
-        Location      [594, 396; 2130, 1146]
+        Location      [0, 93; 1536, 843]
         ZoomFactor    1.73168
         SliderPosition [0, 0]
         ShowBrowser   off
@@ -2348,7 +2348,7 @@ Plecs {
           LabelPosition south
           Parameter {
             Variable      "UpperLimit"
-            Value         "0.90"
+            Value         "0.9"
             Show          off
           }
           Parameter {

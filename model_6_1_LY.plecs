@@ -66,9 +66,9 @@ Plecs {
   ScriptsDialogGeometry "[562 276 446 244]"
   ScriptsDialogSplitterPos "100"
   Schematic {
-    Location      [0, 27; 2560, 1353]
-    ZoomFactor    2.39141
-    SliderPosition [137, 169]
+    Location      [0, 26; 1539, 827]
+    ZoomFactor    1.44003
+    SliderPosition [90, 106]
     ShowBrowser   off
     BrowserWidth  100
     Component {
@@ -233,7 +233,7 @@ Plecs {
       Type          Constant
       Name          "V4"
       Show          off
-      Position      [685, 525]
+      Position      [685, 535]
       Direction     right
       Flipped       on
       LabelPosition south
@@ -283,7 +283,7 @@ Plecs {
     }
     Component {
       Type          Mosfet
-      Name          "FET1"
+      Name          "Q2"
       Show          on
       Position      [605, 375]
       Direction     up
@@ -317,7 +317,7 @@ Plecs {
     }
     Component {
       Type          Mosfet
-      Name          "FET2"
+      Name          "Q1"
       Show          on
       Position      [490, 375]
       Direction     up
@@ -382,7 +382,7 @@ Plecs {
       Type          Subsystem
       Name          "Controller"
       Show          on
-      Position      [515, 515]
+      Position      [505, 525]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -424,9 +424,9 @@ Plecs {
         Direction     down
       }
       Schematic {
-        Location      [0, 27; 2560, 1353]
-        ZoomFactor    1.72911
-        SliderPosition [0, 23]
+        Location      [0, 26; 1539, 827]
+        ZoomFactor    1.8981
+        SliderPosition [306, 248]
         ShowBrowser   off
         BrowserWidth  100
         Component {
@@ -679,12 +679,12 @@ Plecs {
           LabelPosition north
           Parameter {
             Variable      "UpperLimit"
-            Value         "1"
+            Value         "0.9"
             Show          off
           }
           Parameter {
             Variable      "LowerLimit"
-            Value         "0"
+            Value         "0.1"
             Show          off
           }
         }
@@ -3582,7 +3582,7 @@ Plecs {
       TimeRange     "0"
       ScrollingMode "1"
       SingleTimeAxis "1"
-      Open          "0"
+      Open          "1"
       Ts            "-1"
       SampleLimit   "0"
       XAxisLabel    "Time [s]"
@@ -3627,11 +3627,11 @@ Plecs {
       Direction     up
       Flipped       off
       LabelPosition south
-      Location      [0, 41; 1283, 796]
+      Location      [0, 41; 1283, 805]
       State         "AAAA/wAAAAD9AAAAAgAAAAEAAAB4AAABlPwCAAAAA/sAAAAUAFMAYQB2A"
 "GUAZABWAGkAZQB3AHMAAAAAHAAAAZQAAABoAP////sAAAAQAFoAbwBvAG0AQQByAGUAYQAAAAAA//"
-"///wAAADYA////+wAAAAwAVAByAGEAYwBlAHMAAAAA2wAAANUAAABoAP///wAAAAMAAAUDAAAAiPw"
-"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAABQMAAABSAP///wAABQMAAAJMAAAA"
+"///wAAADYA////+wAAAAwAVAByAGEAYwBlAHMAAAAA2wAAANUAAABoAP///wAAAAMAAAUDAAAAdfw"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAABQMAAABSAP///wAABQMAAAJoAAAA"
 "BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
 "AAAAA=="
       SavedViews    "AAAAAgAAAAEAAAAYAFMAdABlAGEAZAB5ACAAcwB0AGEAdABlP8SBKprzW"
@@ -3653,7 +3653,7 @@ Plecs {
         AutoScale     1
         MinValue      0
         MaxValue      1
-        Signals       {"Source Voltage (Vg)", "Inductor Current (x10)"}
+        Signals       {"Source Voltage (Vg)"}
         SignalTypes   [ ]
         AxisLabel     "Voltage [V] vs Current x10[A] "
         Untangle      0
@@ -3671,7 +3671,7 @@ Plecs {
           AutoScale     1
           MinValue      0
           MaxValue      1
-          Signals       {"Source Voltage (Vg)", "Inductor Current (x10)"}
+          Signals       {"Source Voltage (Vg)"}
           Untangle      0
           KeepBaseline  off
           BaselineValue 0
@@ -3986,7 +3986,6 @@ Plecs {
       Type          Signal
       SrcComponent  "Controller"
       SrcTerminal   5
-      Points        [515, 470; 505, 470]
       DstComponent  "Demux"
       DstTerminal   1
     }
@@ -4012,7 +4011,7 @@ Plecs {
       Branch {
         Points        [605, 335]
         Branch {
-          DstComponent  "FET1"
+          DstComponent  "Q2"
           DstTerminal   1
         }
         Branch {
@@ -4037,11 +4036,11 @@ Plecs {
           Points        [605, 415]
           Branch {
             Points        [490, 415]
-            DstComponent  "FET2"
+            DstComponent  "Q1"
             DstTerminal   2
           }
           Branch {
-            DstComponent  "FET1"
+            DstComponent  "Q2"
             DstTerminal   2
           }
         }
@@ -4058,7 +4057,7 @@ Plecs {
     }
     Connection {
       Type          Wire
-      SrcComponent  "FET2"
+      SrcComponent  "Q1"
       SrcTerminal   1
       Points        [490, 285]
       Branch {
@@ -4128,7 +4127,7 @@ Plecs {
       Points        [500, 430; 445, 430; 445, 420]
       Branch {
         Points        [445, 375]
-        DstComponent  "FET2"
+        DstComponent  "Q1"
         DstTerminal   3
       }
       Branch {
@@ -4144,7 +4143,7 @@ Plecs {
       Points        [510, 430; 560, 430]
       Branch {
         Points        [560, 375]
-        DstComponent  "FET1"
+        DstComponent  "Q2"
         DstTerminal   3
       }
       Branch {
@@ -4159,7 +4158,7 @@ Plecs {
       SrcTerminal   3
       Points        [260, 385]
       Branch {
-        Points        [260, 525]
+        Points        [260, 535]
         DstComponent  "Controller"
         DstTerminal   3
       }
@@ -4189,7 +4188,7 @@ Plecs {
       SrcTerminal   3
       Points        [695, 310]
       Branch {
-        Points        [695, 505]
+        Points        [695, 515]
         DstComponent  "Controller"
         DstTerminal   2
       }
@@ -4212,7 +4211,7 @@ Plecs {
       SrcTerminal   3
       Points        [310, 310; 310, 405]
       Branch {
-        Points        [310, 505]
+        Points        [310, 515]
         DstComponent  "Controller"
         DstTerminal   1
       }
@@ -4255,7 +4254,7 @@ Plecs {
         DstTerminal   3
       }
       Branch {
-        Points        [570, 600]
+        Points        [560, 600]
         DstComponent  "Controller"
         DstTerminal   6
       }
